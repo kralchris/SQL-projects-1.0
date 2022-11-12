@@ -1,8 +1,4 @@
-  create schema interviews;
-
-  set schema 'interviews';
-
-    -- Project 1.1
+      -- Project 1.1
 	-- Automated ticket control in the Prague metro
 	
 	-- The goal is to calculate the rate of the people who exited the metro
