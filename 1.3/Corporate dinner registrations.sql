@@ -39,16 +39,16 @@ select count(case when status = 'unregistered' then 1 else null end) * 1.00 /
 from reg_status
 where date = '2020-01-10'
 
--- alternative
+-- Alternative version :
 --
-with unregistered as(
-select date,
-  count(case when status = 'unregistered' then 1 else null end) * 1.00 /
-  (count(case when status = 'unregistered' then 1 else null end) +
-  count(case when status = 'registered' then 1 else null end)) * 100 percent_unregistered
-from reg_status
-group by 1
-)
-select percent_unregistered
-from unregistered
-where date = '2020-01-10'
+-- with unregistered as(
+-- select date,
+--   count(case when status = 'unregistered' then 1 else null end) * 1.00 /
+--   (count(case when status = 'unregistered' then 1 else null end) +
+--   count(case when status = 'registered' then 1 else null end)) * 100 percent_unregistered
+-- from reg_status
+-- group by 1
+-- )
+-- select percent_unregistered
+-- from unregistered
+-- where date = '2020-01-10'
