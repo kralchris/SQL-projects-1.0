@@ -1,6 +1,7 @@
   -- Project 1.2
 	-- Energy consumption
 	
+	-- Have you ever taken a walk and noticed a clock that is not working ? It is time to reduce energy consumption even more !
 	-- The goal is to find the date with the highest total energy consumption of clocks in Prague.
 	-- We will output the date and the total consumption across all clocks.
 	
